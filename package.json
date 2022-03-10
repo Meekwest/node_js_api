@@ -1,0 +1,29 @@
+{
+  "name": "node_js_api",
+  "version": "1.0.0",
+  "description": "API на основе Node JS",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meekwest/node_js_api.git"
+  },
+  "author": "Meekwest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meekwest/node_js_api/issues"
+  },
+  "homepage": "https://github.com/Meekwest/node_js_api#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "tslog": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
