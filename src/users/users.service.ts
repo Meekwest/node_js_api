@@ -9,6 +9,9 @@ export class UserService implements IUserService {
 	async createUser({ email, name, password }: UserRegisterDto): Promise<User | null> {
 		const newUser = new User(email, name);
 		await newUser.setPassword(password);
+		// проверка, есть ли пользователь?
+		// если есть - возвращаем null
+		// иначе создаем
 		return null;
 	}
 
