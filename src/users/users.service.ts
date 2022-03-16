@@ -5,7 +5,7 @@ import { TYPES } from '../types';
 import { UserLoginDto } from './dto/user-login.dto';
 import { UserRegisterDto } from './dto/user-register.dto';
 import { User } from './user.entity';
-import { IUserService } from './user.service.interface';
+import { IUserService } from './users.service.interface';
 import { IUsersRepository } from './users.repository.interface';
 
 @injectable()
@@ -32,5 +32,9 @@ export class UserService implements IUserService {
 		}
 		const newUser = new User(existedUser.email, existedUser.name, existedUser.password);
 		return newUser.comparePassword(password);
+	}
+
+	async getUserInfo(email: string): Promise<UserModel | null> {
+		return this.usersRepository.find(email);
 	}
 }

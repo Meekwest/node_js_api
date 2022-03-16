@@ -8,7 +8,7 @@ import { LoggerService } from './logger/logger.service';
 import { ConfigService } from './config/config.service';
 import { UserController } from './users/users.controller';
 import { UserService } from './users/users.service';
-import { IUserService } from './users/user.service.interface';
+import { IUserService } from './users/users.service.interface';
 import { IUserController } from './users/users.controller.interface';
 import { IConfigService } from './config/config.service.interface';
 import { PrismaService } from './database/prisma.service';
